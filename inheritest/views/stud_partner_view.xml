@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flectra>
+
+        <record id="res_partner_form_view" model="ir.ui.view">
+            <field name="name">res_partner_form_view</field>
+            <field name="model">studentcourse.details</field>
+            <field name="inherit_id" ref="studentmanagementsystem.studentcourse_details_form_view"/>
+            <field name="arch" type="xml">
+                    <field name="faculty_id" position = "after">
+                        <field name="total_course1"></field>
+                        <field name="graduation"/>
+                    </field>
+            </field>
+        </record>
+
+
+        <record id="res_partner_list_view" model="ir.ui.view">
+            <field name="name">res_partner_list_view</field>
+            <field name="model">studentcourse.details</field>
+            <field name="inherit_id" ref="studentmanagementsystem.studentcourse_details_list_view"/>
+            <field name="arch" type="xml">
+                <field name="faculty_id" position="after">
+                    <field name="total_course1"></field>
+                    <field name="graduation"/>
+                </field>
+            </field>
+        </record>
+</flectra>
